@@ -15,6 +15,12 @@ function indent() {
   esac
 }
 
+git clone --recursive git@github.com:boostorg/boost.git
+cd boost
+bootstrap.sh
+./b2 install -j4
+#Install Boost library.
+
 cd $BUILD_DIR
 
 # configure
