@@ -25,4 +25,4 @@ fi
 
 # make
 echo "-----> Compiling with Make"
-make buildrun 2>&1 | indent
+g++ sample.cpp -o sample --pedantic-errors -std=c++17 -lpthread -I /app/.apt/usr/lib/x86_64-linux-gnu/ 2>&1 | indent
